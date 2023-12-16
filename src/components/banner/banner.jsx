@@ -10,7 +10,7 @@ const BannerComponent = () => {
       <div className=" md:mt-28 max-md:mt-20 space-y-5">
         <h1 className="text-4xl font-semibold text-green-950">
           Membantu Solusi Pemasaran Bisnis Digitalmu seperti{" "}
-          <span className="font-black text-green-500">Development, Uxer Experience dan Digital Marketing </span>
+          <span className="font-black text-green-500">Development, User Experience dan Digital Marketing </span>
           Yang Jauh Lebih Baik.
         </h1>
         <button className="btn bg-green-950 text-white rounded-md font-semibold hover:bg-green-400 hover:text-white active:bg-green-400 active:text-white">
