@@ -17,7 +17,7 @@ const BannerComponent = () => {
           Mulai Sekarang
         </button>
       </div>
-      <div className="flex py-10 justify-center">
+      <div className="flex py-10 bg-white justify-center">
         <div className="frame">
           <div className="frame-slide">
             <Image src={FrameSatu} alt="frame1" className="w-72 img" />
