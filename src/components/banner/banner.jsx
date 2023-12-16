@@ -6,7 +6,7 @@ import "@/components/banner/banner.css";
 
 const BannerComponent = () => {
   return (
-    <div className="relative mt-20 max-lg:mx-10 lg:mx-60 flex max-lg:grid space-x-2 text-black">
+    <div className="relative mt-20 max-lg:mx-10 bg-white lg:mx-60 flex max-lg:grid space-x-2 text-black">
       <div className="mt-20 space-y-5">
         <h1 className="text-4xl font-light">
           Membantu Bisnismu Dikenal Jutaan Orang di Internet dengan{" "}
