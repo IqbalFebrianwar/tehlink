@@ -84,7 +84,7 @@ const NavbarComponent = () => {
               : `font-bold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
-          Portofolio
+          Layanan
         </button>
         <button
           className={
@@ -93,7 +93,7 @@ const NavbarComponent = () => {
               : `font-bold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
-          Beranda
+          Portofolio
         </button>
         
       </div>

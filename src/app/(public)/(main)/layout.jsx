@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 
 const NavbarComponent = dynamic(() => import("@/components/navbar"));
 const DrawerComponent = dynamic(() => import("@/components/drawer/drawer"));
+const FooterComponent = dynamic(() => import("@/components/footer"));
 const DrawerContent = dynamic(() =>
   import("@/components/drawer/drawercontent")
 );
@@ -13,7 +14,10 @@ const HomePageLayout = ({ children }) => {
       <DrawerComponent>
         <DrawerContent />
         <NavbarComponent />
-        <main>{children}</main>
+        <main className="w-full absolute font-body justify-between bg-white">
+          {children}
+          <FooterComponent />
+        </main>
         <DrawerSide />
       </DrawerComponent>
     </>

@@ -6,14 +6,14 @@ import "@/components/banner/banner.css";
 
 const BannerComponent = () => {
   return (
-    <div className="relative mt-20 max-lg:mx-10 bg-white lg:mx-60 flex max-lg:grid space-x-2 text-black">
-      <div className="mt-20 space-y-5">
-        <h1 className="text-4xl font-light">
-          Membantu Bisnismu Dikenal Jutaan Orang di Internet dengan{" "}
-          <span className="font-extrabold text-green-500">Website </span>
-          Yang Lebih Baik.
+    <div className="relative py-20 max-lg:mx-10 bg-white lg:mx-60 flex max-lg:grid space-x-2 text-black">
+      <div className=" md:mt-28 max-md:mt-20 space-y-5">
+        <h1 className="text-4xl font-semibold text-green-950">
+          Membantu Solusi Pemasaran Bisnis Digitalmu seperti{" "}
+          <span className="font-black text-green-500">Development, Uxer Experience dan Digital Marketing </span>
+          Yang Jauh Lebih Baik.
         </h1>
-        <button className="btn bg-black text-white rounded-md font-semibold hover:bg-green-400 hover:text-white active:bg-green-400 active:text-white">
+        <button className="btn bg-green-950 text-white rounded-md font-semibold hover:bg-green-400 hover:text-white active:bg-green-400 active:text-white">
           Mulai Sekarang
         </button>
       </div>
