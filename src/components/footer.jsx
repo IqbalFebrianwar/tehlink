@@ -4,7 +4,7 @@ import Image from "next/image";
 const FooterComponent = () => {
   return (
     <footer className="footer absolute items-center font-body footer-center p-10 bg-green-950 text-white">
-      <footer className="footer items-center max-md:space-y-10 p-10 bg-green-950 text-white">
+      <footer className="footer max-md:justify-start items-center max-md:space-y-10 p-10 bg-green-950 text-white">
         <nav>
           <header className="font-extrabold text-lg pb-2 text-white">Layanan</header>
           <a className="link link-hover">Development</a>

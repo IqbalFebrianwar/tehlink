@@ -6,7 +6,7 @@ const DrawerSide = () => {
         aria-label="close sidebar"
         className="drawer-overlay"
       ></label>
-      <ul className="menu space-y-2 font-bold p-4 w-72 min-h-full bg-green-500 text-white">
+      <ul className="menu space-y-2 font-bold p-4 w-72 min-h-full bg-white text-black">
         <li>
           <a className="font-semibold hover:bg-white hover:text-green-500 active:bg-white active:text-green-500 text-lg">Beranda</a>
         </li>
