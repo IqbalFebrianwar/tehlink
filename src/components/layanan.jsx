@@ -1,65 +1,85 @@
-import Image from "next/image";
-import Development from"@/components/svg/development.svg"
-import UX from"@/components/svg/ux.svg"
-import Digital from"@/components/svg/digital.svg"
+"use client";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+import CardLayanan from "./card/cardlayanan";
+import DevIcon from "@/components/svg/development.svg";
+import MobileAppIcon from "@/components/svg/mobileapp.svg";
+import UIIcon from "@/components/svg/ux.svg";
+import SEOIcon from "@/components/svg/seo.svg";
 
 const LayananComponent = () => {
   return (
-    <div className="mt-20 space-y-20">
-      <div className="flex max-md:space-y-10 max-lg:grid w-full justify-between lg:px-16">
-        <div className="space-y-5">
-          <h1 className="text-xl md:text-3xl text-white font-extrabold">
-            DEVELOPMENT
-          </h1>
-          <p className="text-white max-w-xl">
-            Para ahli kami memiliki spesialisasi dalam menciptakan situs web dan
-            aplikasi mobile yang disesuaikan untuk semua perangkat, semuanya
-            dirancang untuk mendukung pertumbuhan bisnis Anda.
-          </p>
-          <ul>
-            <li className="text-white">- Web Development</li>
-            <li className="text-white">- Mobile Apps</li>
-            <li className="text-white">- Visual Design</li>
-            <li className="text-white">- E-Commerce</li>
-          </ul>
-        </div>
-        <Image src={Development} alt="DevIcon" className="w-48 max-md:w-24" />
+    <div className="md:mt-20 mt-8 flex w-full justify-center items-center relative">
+      <div className="grid grid-cols-2 gap-4 max-md:hidden">
+        <CardLayanan
+          title="Web Development"
+          deks="Menciptakan Situs Web yang responsif dengan design yang menarik."
+          bgcolor="bg-purple-200"
+          icon={DevIcon}
+        />
+        <CardLayanan
+          title="Mobile App"
+          deks="Menciptakan Aplikasi Mobile yang disesuaikan untuk semua perangkat."
+          bgcolor="bg-yellow-200"
+          icon={MobileAppIcon}
+        />
+        <CardLayanan
+          title="UI/UX Design"
+          deks="Menciptakan desain yang memikat dan pengalaman pengguna untuk hasil terbaik bagi bisnis kamu."
+          bgcolor="bg-green-200"
+          icon={UIIcon}
+        />
+        <CardLayanan
+          title="SEO Improvement"
+          deks="Membantu mendapatkan lebih banyak pengunjung dan konversi yang lebih banyak."
+          bgcolor="bg-red-200"
+          icon={SEOIcon}
+        />
       </div>
-      <div className="flex max-md:space-y-10 max-md:grid max-md:px-2 w-full justify-between px-16">
-        <div className="space-y-5">
-          <h1 className="text-xl md:text-3xl text-white font-extrabold">
-            USER EXPERIENCE
-          </h1>
-          <p className="text-white max-w-xl">
-            Prioritas kami adalah menciptakan desain yang memikat dan pengalaman
-            pengguna yang lancar untuk mendorong hasil terbaik bagi bisnis Anda.
-          </p>
-          <ul>
-            <li className="text-white">- UI/UX Design</li>
-            <li className="text-white">- UX Research</li>
-            <li className="text-white">- UX Survey</li>
-            <li className="text-white">- Usability Testing</li>
-          </ul>
-        </div>
-        <Image src={UX} alt="UxIcon" className="w-48 max-md:w-24" />
-      </div>
-      <div className="flex max-md:space-y-10 w-full max-md:grid max-md:px-2 justify-between px-16">
-        <div className="space-y-5">
-          <h1 className="text-xl md:text-3xl text-white font-extrabold">
-            DIGITAL MARKETING
-          </h1>
-          <p className="text-white max-w-xl">
-            Layanan pemasaran digital kami yang lengkap dirancang khusus untuk
-            membangun kehadiran online Anda dan mendorong hasil maksimal.
-          </p>
-          <ul>
-            <li className="text-white">- Search Engine Optimization (SEO)</li>
-            <li className="text-white">- Email Marketing</li>
-            <li className="text-white">- Conversion rate optimization (CRO)</li>
-          </ul>
-        </div>
-        <Image src={Digital} alt="DigiIcon" className="w-40 max-md:w-24" />
-      </div>
+      <Carousel className="md:max-w-md max-md:w-60 md:hidden">
+        <CarouselContent>
+          <CarouselItem className="w-full flex justify-center">
+            <CardLayanan
+              title="Web Development"
+              deks="Menciptakan Situs Web yang responsif dengan design yang menarik."
+              bgcolor="bg-purple-200"
+              icon={DevIcon}
+            />
+          </CarouselItem>
+          <CarouselItem className="w-full flex justify-center">
+            <CardLayanan
+              title="Mobile App"
+              deks="Menciptakan Aplikasi Mobile yang disesuaikan untuk semua perangkat."
+              bgcolor="bg-yellow-200"
+              icon={MobileAppIcon}
+            />
+          </CarouselItem>
+          <CarouselItem className="w-full flex justify-center">
+            <CardLayanan
+              title="UI/UX Design"
+              deks="Menciptakan desain yang memikat dan pengalaman pengguna untuk hasil terbaik bagi bisnis kamu."
+              bgcolor="bg-green-200"
+              icon={UIIcon}
+            />
+          </CarouselItem>
+          <CarouselItem className="w-full flex justify-center">
+            <CardLayanan
+              title="SEO Improvement"
+              deks="Membantu mendapatkan lebih banyak pengunjung dan konversi yang lebih banyak."
+              bgcolor="bg-red-200"
+              icon={SEOIcon}
+            />
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   );
 };

@@ -55,7 +55,7 @@ const NavbarComponent = () => {
     <div
       className={
         fixed
-          ? `w-full bg-green-500 fixed max-md:px-10 md:px-48 z-30 items-center justify-between max-xl:space-x-20 lg:space-x-16 h-20 lg:h-20 flex`
+          ? `w-full bg-black fixed max-md:px-10 md:px-48 z-30 items-center justify-between max-xl:space-x-20 lg:space-x-16 h-20 lg:h-20 flex`
           : `w-full bg-white fixed max-md:px-10 md:px-48 z-30 items-center justify-between max-xl:space-x-20 lg:space-x-16 h-20 lg:h-20 flex`
       }
     >
@@ -64,15 +64,15 @@ const NavbarComponent = () => {
         <Image 
          src={burgerfix ? BurgerWhite : Burger }
          alt="burger"
-         className="max-md:w-8"
+         className="max-md:w-8 md:w-14"
         />
       </label>
       <div className="relative mx-auto text-gray-600 space-x-7 lg:block max-lg:hidden">
         <button
           className={
             buttonfix
-              ? `font-bold font-body text-lg shadow-none bg-transparent text-white border-0`
-              : `font-bold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
+              ? `font-semibold font-body text-lg shadow-none bg-transparent text-white border-0`
+              : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
           Beranda
@@ -80,8 +80,8 @@ const NavbarComponent = () => {
         <button
           className={
             buttonfix
-              ? `font-bold font-body text-lg shadow-none bg-transparent text-white border-0`
-              : `font-bold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
+              ? `font-semibold font-body text-lg shadow-none bg-transparent text-white border-0`
+              : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
           Layanan
@@ -89,8 +89,8 @@ const NavbarComponent = () => {
         <button
           className={
             buttonfix
-              ? `font-bold font-body text-lg shadow-none bg-transparent text-white border-0`
-              : `font-bold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
+              ? `font-semibold font-body text-lg shadow-none bg-transparent text-white border-0`
+              : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
           Portofolio
