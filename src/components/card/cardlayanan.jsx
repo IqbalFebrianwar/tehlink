@@ -7,8 +7,8 @@ const CardLayanan = ({ title, bgcolor, icon, deks }) => {
         <div className={`p-2 w-10 rounded-lg ${bgcolor}`}>
           <Image src={icon} alt="icon layanan" className="w-10" />
         </div>
-        <h2 className="card-title max-md:text-lg">{title}</h2>
-        <p className="max-md:text-sm">{deks}</p>
+        <h2 className="card-title text-black max-md:text-lg">{title}</h2>
+        <p className=" text-gray-400 max-md:text-sm">{deks}</p>
       </div>
     </div>
   );
