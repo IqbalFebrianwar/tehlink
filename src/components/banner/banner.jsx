@@ -5,6 +5,7 @@ import FrameTiga from "@/components/svg/frame3.svg";
 import "@/components/banner/banner.css";
 import Lingkar from "@/components/svg/lingkar.svg"
 import LingkarBiru from "@/components/svg/lingkarbiru.svg"
+import Link from "next/link";
 
 const BannerComponent = () => {
   return (
@@ -24,9 +25,9 @@ const BannerComponent = () => {
           <span className="font-extrabold relative text-black">Build Apps dan Design </span>
           Untuk Membantu Solusi Bisnis Digitalmu Yang Jauh lebih baik.
         </h1>
-        <button className="btn bg-black text-white rounded-md font-semibold hover:bg-green-400 hover:text-white active:bg-green-400 active:text-white">
+        <Link href="https://wa.me/6288213715343?text=Hai%20TehLinkID%20Saya%20Ingin%20Konsultasi%20IT%20" className="btn bg-black text-white rounded-md font-semibold hover:bg-green-400 hover:text-white active:bg-green-400 active:text-white">
           Mulai Sekarang
-        </button>
+        </Link>
       </div>
       <div className="flex py-10 bg-white justify-center">
         <div className="frame">

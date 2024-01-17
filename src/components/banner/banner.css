@@ -1,5 +1,5 @@
 .frame-slide{
-    animation: 5s slide infinite linear;
+    animation: 15s slide infinite linear;
     display: inline-block;
     white-space: nowrap;
     
@@ -9,7 +9,7 @@
     height: 200px;
 }
 .frame-slide2{
-    animation: 5s slide1 infinite linear;
+    animation: 15s slide1 infinite linear;
     display: inline-block;
     white-space: nowrap;
     

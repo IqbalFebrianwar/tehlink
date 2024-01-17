@@ -4,8 +4,8 @@ import Image from "next/image";
 import Logo from "@/components/svg/tehlink.svg";
 import LogoWhite from "@/components/svg/tehlinkwhite.svg";
 import { useEffect, useState } from "react";
-import Burger from "@/components/svg/burger.svg"
-import BurgerWhite from "@/components/svg/burgerwhite.svg"
+import Burger from "@/components/svg/burger.svg";
+import BurgerWhite from "@/components/svg/burgerwhite.svg";
 
 const NavbarComponent = () => {
   const [fixed, setFixed] = useState(false);
@@ -59,12 +59,19 @@ const NavbarComponent = () => {
           : `w-full bg-white fixed max-md:px-10 md:px-48 z-30 items-center justify-between max-xl:space-x-20 lg:space-x-16 h-20 lg:h-20 flex`
       }
     >
-      <Image src={logofix ? LogoWhite : Logo} alt="logo" className=" md:w-28 max-md:w-18" />
-      <label htmlFor="my-drawer" className="bg-transparent lg:hidden drawer-button">
-        <Image 
-         src={burgerfix ? BurgerWhite : Burger }
-         alt="burger"
-         className="max-md:w-8 md:w-14"
+      <Image
+        src={logofix ? LogoWhite : Logo}
+        alt="logo"
+        className=" md:w-28 max-md:w-18"
+      />
+      <label
+        htmlFor="my-drawer"
+        className="bg-transparent lg:hidden drawer-button"
+      >
+        <Image
+          src={burgerfix ? BurgerWhite : Burger}
+          alt="burger"
+          className="max-md:w-8 md:w-14"
         />
       </label>
       <div className="relative mx-auto text-gray-600 space-x-7 lg:block max-lg:hidden">
@@ -75,7 +82,7 @@ const NavbarComponent = () => {
               : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
-          Beranda
+          <a href="#beranda">Beranda</a>
         </button>
         <button
           className={
@@ -84,7 +91,7 @@ const NavbarComponent = () => {
               : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
-          Layanan
+          <a href="#layanan">Layanan</a>
         </button>
         <button
           className={
@@ -93,9 +100,8 @@ const NavbarComponent = () => {
               : `font-semibold font-body text-lg shadow-none bg-transparent text-gray-400 hover:text-black active:text-black border-0`
           }
         >
-          Portofolio
+          <a href="#project">Portfolio</a>
         </button>
-        
       </div>
     </div>
   );

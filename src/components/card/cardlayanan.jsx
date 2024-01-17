@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CardLayanan = ({ title, bgcolor, icon, deks }) => {
   return (
-    <div className="card md:max-w-md max-md:w-60 bg-white">
+    <div className="card md:max-w-md max-md:w-60 glass">
       <div className="card-body">
         <div className={`p-2 w-10 rounded-lg ${bgcolor}`}>
           <Image src={icon} alt="icon layanan" className="w-10" />

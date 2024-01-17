@@ -12,8 +12,12 @@ import DevIcon from "@/components/svg/development.svg";
 import MobileAppIcon from "@/components/svg/mobileapp.svg";
 import UIIcon from "@/components/svg/ux.svg";
 import SEOIcon from "@/components/svg/seo.svg";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const LayananComponent = () => {
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  
   return (
     <div className="md:mt-20 mt-8 flex w-full justify-center items-center relative">
       <div className="grid grid-cols-2 gap-4 max-md:hidden">
@@ -42,7 +46,12 @@ const LayananComponent = () => {
           icon={SEOIcon}
         />
       </div>
-      <Carousel className="md:max-w-md max-md:w-60 md:hidden">
+      <Carousel
+        plugins={[plugin.current]}
+        className="md:max-w-md max-md:w-60 md:hidden"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
         <CarouselContent>
           <CarouselItem className="w-full flex justify-center">
             <CardLayanan
