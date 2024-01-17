@@ -7,9 +7,10 @@ const FooterComponent = () => {
       <footer className="footer max-md:justify-start items-center max-md:space-y-10 p-10 bg-black text-white">
         <nav>
           <header className="font-extrabold text-lg pb-2 text-white">Layanan</header>
-          <a className="link link-hover">Development</a>
-          <a className="link link-hover">Uxer Experience</a>
-          <a className="link link-hover">Digital Marketing</a>
+          <a className="link link-hover">Web Development</a>
+          <a className="link link-hover">Mobile App</a>
+          <a className="link link-hover">UI/UX Design</a>
+          <a className="link link-hover">SEO Improvement</a>
         </nav>
         <nav>
           <header className="font-extrabold text-lg pb-2 text-white">Tehlink</header>
